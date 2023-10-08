@@ -10,7 +10,13 @@ body {
         color: black;
         margin: 40px;
       }
-
+      h3 {
+    
+        background-color: rgb(194, 151, 147);
+      }
+      p {
+        background-color: rgb(194, 151, 147);
+      }
       footer {
         background-color: rgb(194, 151, 147);
         color: white;
