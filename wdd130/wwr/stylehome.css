@@ -13,7 +13,7 @@
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: #e7c24f ; /* headlines on a colored background */ 
+  --headline-color-on-color: #0c7c59 ; /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #e7c24f; /* paragraph text on a colored background */ 
   --paragraph-background-color: #0c7c59  ;
@@ -31,19 +31,30 @@ nav a {
   text-decoration: none;
   color: #fcfbfb;
   text-align: center;
-  padding: 35px;
+  padding: 10px;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 /* wareflame*/
 header {
-  background-color:#6f7364;
+  background-color:rgb(194, 151, 147);
+  opacity: .8;
   display: grid;
   grid-template-columns: 150px auto;
+  grid-template-rows: 100px;
 }
 
 nav {
+  color: var(--headline-color-on-color);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 
@@ -84,8 +95,7 @@ nav {
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
-  
-}
+  }
 
 .card-img, .mountains {
   width: 100%;
@@ -135,58 +145,62 @@ footer {
   align-items: center;
 }
 
-
 body {
-    text-align: center;
+  text-align: center;
   }
 
-  .home-title {
-    font-family: 'Averia Sans libre', 'Bradley Hand', sans-serif;
-    font-size: 2em;
+.home-title {
+  font-family: 'Averia Sans libre', 'Bradley Hand', sans-serif;
+  font-size: 2em;
 }
 
 h1 {
-    margin: 50px 0;
+  margin: 50px 0;
 }
   
 nav {
   background-color: rgb(194, 151, 147);
-  padding: 5px;}
+  padding: 1px;}
   a {
     color: black;
-    margin: 40px;
+    margin: 20px;
     }
   h3 {
     background-color: #6f7364;
     }
   
-  footer {
-    background-color: rgb(194, 151, 147);
-    color: white;
-    padding: 10px;   
-    }
-     .book, .join {
-      background-color: #d9c2a3;
-      color: black;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 15px 30px;
-      margin-top: 50px;
-      border-radius: 5px;
-  }
-  .card-img {
-      border: 10px solid #d9c2a3;
-      transition: transform .5s;
-      box-shadow: 5px 5px 10px #6f7364;
-  }
-      .card-img:hover {
-        opacity: .6;
-        transform: scale(1.1);
-    }
+footer {
+  background-color: #6f7364;
+  color: white;
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.book, .join {
+  background-color: #d9c2a3;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.card-img {
+  border: 10px solid #d9c2a3;
+  transition: transform .5s;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
+}
   
-  main section img {
-      box-sizing: border-box;
-  }
+/*main section img {
+  box-sizing: border-box;
+}*/
 
 .msg {
   background-color: #6f7364;
@@ -199,7 +213,7 @@ nav {
 }
 footer p {
   font-size: 20px;
-  margin: 20px auto;
+  margin: 5px auto;
   }   
    
 footer p a:hover {
