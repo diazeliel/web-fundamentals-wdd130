@@ -94,7 +94,8 @@ nav {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  margin-top: 250px
   }
 
 .card-img, .mountains {
@@ -246,7 +247,8 @@ footer p a:hover {
         color: #6f7364;
     }
     .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
+
+        margin: 250px auto;
         width: 60%;
     }
     #background {
