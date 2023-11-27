@@ -104,3 +104,18 @@ footer p a:hover {
   text-decoration: underline;
   }  
 
+  .card-img{
+    width: 100%;
+  }
+main{
+  display: grid;
+  grid-template-columns:200px 200px 200px 200px 200px ;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+h2 {
+  grid-column: 1/4;
+  align-self: center;
+}
+p{
+  grid-column: 1/4;
+}
