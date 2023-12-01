@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="contactus.css">
 </head>
 <body>
+    
     <header>
-        <a id="logo_link" href="index.html">
-            <img class="logo" src="images/raftinglogo.png" height="80" width="80" alt="Logo image">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
+        
+      <a id="logo_link" href="index.html">
+        <img class="logo" src="images/raftinglogo.png" height="80" width="80" alt="Logo image">
+        <div id= "navbar">
+          
+            <a class="index.html">Home</a>
             <a href="Destinations.html">Destinations</a>
             <a href="site_plan_rafting.html">Site Plan</a>
             <a href="contactus.html">Contact Us</a>
-        </nav>
+           
+    </div>
     </header>
-        <div id="hero">
+            <div class="content">
+            <div id="hero">
             <div id="hero-box">
                 <img id="hero-img" src="images/hero.jpg" alt="People enjoying white water rafting">
             </div>
@@ -53,6 +57,7 @@
               </li>
             </ul>
           </form>
+        </content>
           </main>
         <footer>
             <p>Rafting Rapids &copy; 2023 - </p>
@@ -69,6 +74,7 @@
                     <img src="images/instagram.jfif" width="50" height="50" alt="instagram_icon">
                 </a>
             </div>
+        </div>
         </footer>  
         <script>
             // get the feedback div element so we can do something with it.
@@ -86,6 +92,21 @@
                 // add a class to move everything down so our message doesn't cover it.
                 document.body.classList.toggle('moveDown');
             });
+
         </script>     
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+            </script>
 </body>
 </html>
