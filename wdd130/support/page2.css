@@ -95,17 +95,16 @@ h1 {
 footer {
   background-color: #352208;
   color: white;
-  padding: 25px 50px;
+  padding: 30px 25px;
   margin-top: 200px; 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-
 footer p {
-  font-size: 20px;
-  margin: 5px auto;
+  font-size: 30px;
+  margin: 10px auto;
   }   
    
 footer p a:hover {
@@ -119,8 +118,13 @@ footer p a:hover {
   }
 main{
   display: grid;
-  grid-template-columns:150px 150px 150px 150px 150px 150px 150px;
+  grid-template-columns:200px 200px 200px 200px 200px 200px 200px;
   grid-template-rows: 100px 30px 240px 240px 150px 100px 100px 50px 50px 50px;
+}
+
+p1,p2, p3,h {
+  font-size: 1.5em;
+  text-align: center;
 }
 h1 {
   grid-column: 1/7;
