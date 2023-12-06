@@ -33,11 +33,9 @@ Fonts are separated by a | */
 }
 
 nav a {
-  /*display:grid;*/
   font-size: 2em;
   text-decoration: none;
   color: #fcfbfb;
-  /*text-align: justify;*/
   padding: 15px;
 
 }
@@ -50,7 +48,7 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-/* wareflame*/
+
 header {
   background-color:#352208;
   opacity: .8;
